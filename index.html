@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UniEvent | University Events</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="brand">
+      <div class="brand-icon">U</div>
+      <div>
+        <h2>UniEvent</h2>
+        <span>Cloud Event Platform</span>
+      </div>
+    </div>
+
+    <nav>
+      <a href="#events">Events</a>
+      <a href="#about">About</a>
+      <a href="#cloud">Architecture</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-left">
+      <span class="badge">AWS Powered University System</span>
+      <h1>Manage University Events with a Secure Cloud Platform</h1>
+      <p>
+        UniEvent helps students discover official university activities, register for events,
+        and access event media through a scalable AWS-based architecture.
+      </p>
+
+      <div class="hero-actions">
+        <a href="#events" class="primary-btn">Explore Events</a>
+        <a href="#cloud" class="secondary-btn">View Architecture</a>
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <h3>System Highlights</h3>
+      <ul>
+        <li>Multiple EC2 instances</li>
+        <li>Private subnet deployment</li>
+        <li>Application Load Balancer</li>
+        <li>Secure S3 media storage</li>
+        <li>External API event fetching</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div>
+      <h2>High</h2>
+      <p>Availability</p>
+    </div>
+    <div>
+      <h2>Secure</h2>
+      <p>Private EC2 Access</p>
+    </div>
+    <div>
+      <h2>Scalable</h2>
+      <p>Load Balanced Design</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="events-section" id="events">
+      <div class="section-header">
+        <span>Official Listings</span>
+        <h2>University Events</h2>
+        <p>Event information is loaded from a structured JSON/API source.</p>
+      </div>
+
+      <div class="events-container" id="eventsContainer"></div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div>
+        <span>About the Platform</span>
+        <h2>Centralized Event Management for Students</h2>
+        <p>
+          UniEvent provides a clean and reliable interface for students to browse academic,
+          social, technical, and sports events. The system is designed to support peak
+          registration periods using cloud best practices.
+        </p>
+      </div>
+    </section>
+
+    <section class="cloud-section" id="cloud">
+      <div class="section-header">
+        <span>AWS Deployment Design</span>
+        <h2>Cloud Architecture Components</h2>
+      </div>
+
+      <div class="cloud-grid">
+        <div class="cloud-card">
+          <h3>VPC</h3>
+          <p>Custom network with public and private subnets across availability zones.</p>
+        </div>
+        <div class="cloud-card">
+          <h3>EC2</h3>
+          <p>Application servers placed in private subnets for better security.</p>
+        </div>
+        <div class="cloud-card">
+          <h3>ALB</h3>
+          <p>Distributes user traffic across healthy EC2 instances.</p>
+        </div>
+        <div class="cloud-card">
+          <h3>S3</h3>
+          <p>Stores event posters, images, and related media securely.</p>
+        </div>
+        <div class="cloud-card">
+          <h3>IAM</h3>
+          <p>Provides controlled access between EC2 and S3 without hardcoded keys.</p>
+        </div>
+        <div class="cloud-card">
+          <h3>Fault Tolerance</h3>
+          <p>The system remains available even if one EC2 instance fails.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>UniEvent © 2026 | CE 308/408 Cloud Computing Assignment</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
